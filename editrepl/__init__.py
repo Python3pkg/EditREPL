@@ -29,7 +29,7 @@ class EditREPL(object):
                 del outermost_frame.f_globals[old_editor]
 
         # Bind the new editor method
-        print("Binding editor to %s." % ER.editor)
+        print(("Binding editor to %s." % ER.editor))
         outermost_frame.f_locals[ER.editor] = ER.exec_editor
         outermost_frame.f_globals[ER.editor] = ER.exec_editor
 
